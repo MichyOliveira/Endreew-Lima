@@ -1,0 +1,263 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+}
+.bg-black {
+    background-color: #000 !important; /* Fundo totalmente preto */
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to bottom, #8b0000, #00000000); /* Gradiente vermelho para preto */
+    margin: 0;
+    padding: 0;
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-brand img.logo {
+    width: 40%;
+    margin: 0;
+}
+.nav-link {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+.nav-link:hover {
+    color: #d9534f; /* Vermelho destaque */
+    transform: scale(1.1);
+    transition: transform 0.3s ease; /* Animação suave de 0.3s */
+}
+.btn-danger {
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    background-color: #000;
+    border: #000;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-danger:hover {
+    background-color: #e22d26;
+    color: #000000;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Banner */
+.bg-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('./img/foto1.jpg') center/cover no-repeat; /* Imagem de fundo com gradiente */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header h1 {
+    font-family: "Blaka", system-ui, sans-serif; /* Fonte personalizada */
+    font-size: 80px;
+    color: white; /* Cor do texto */
+    -webkit-text-stroke: 1px #000; /* Borda preta ao redor do texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra do texto */
+    transition: transform 0.3s ease; /* Para o hover */
+}
+header p {
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Shows Personalizados */
+.extra-bold{
+    font-family: "Coda", serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 80px 0px 80px 0px;
+}
+.show-card {
+    text-align: center;
+}
+.show-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+.show-card h5 {
+    margin-top: 1rem;
+    font-family: "Blaka", system-ui, sans-serif; /* Fonte personalizada */
+    font-size: 40px;
+}
+.show-card p {
+    font-size: 0.9rem;
+    color: #ccc; /* Um tom de cinza para contraste */
+}
+
+/* Seção da agenda */
+#agenda {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
+                url('./img/foto6.jpg') center/cover no-repeat;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#agenda .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent 50%, rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+#agenda .container {
+    position: relative;
+    z-index: 2;
+}
+#agenda .container h2{
+    font-family: "Blaka", system-ui, sans-serif; /* Fonte personalizada */
+    -webkit-text-stroke: 1px #000; /* Borda preta ao redor do texto */
+    font-size: 80px;
+}
+.text-white {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+.card {
+    border-width: 2px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 260px; /* Ajuste este valor conforme necessário */
+    margin: 0 auto;   /* Centraliza o card */
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+.card-body .text-danger {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.card-body h3 {
+    font-size: 2rem;
+}
+.card-body p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+.card-body .small {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+.text-start{
+    background-color: #8b000075;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text-start:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+.text-start p,h3{
+    text-align: center;
+}
+.text-end p{
+    text-align: center;
+}
+.card-body .text-start {
+    min-width: 80px; /* Garante que a data sempre tenha largura suficiente */
+}
+.card-body .text-end {
+    flex-grow: 1; /* O texto do local ocupa o espaço restante */
+    text-align: right;
+}
+
+/* Sobre */
+#sobre .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sobre .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sobre p {
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+#sobre h2{
+    font-family: "Blaka", system-ui, sans-serif; /* Fonte personalizada */
+}
+
+/* Apresentações */
+#carouselGaleria img {
+    border-radius: 8px;  /* Bordas arredondadas nas imagens */
+    object-fit: cover;  /* Para que as imagens cubram todo o espaço sem distorção */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Defina a largura das setas para dar espaço */
+    width: 5%;
+    /* Ajuste a posição das setas para ficarem fora do carrossel */
+    z-index: 1;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(8, 0, 0); /* Cor das setas */
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+/* Contato */
+#contato{
+    margin-bottom: 50px;
+}
+#contato label{
+    color: white;
+    background-color: #000;
+    font-family: "Coda", system-ui;
+}
+#contato .enviar{
+    border: solid #8b0000;
+}
+#contato h2{
+    font-family: "Blaka", system-ui, sans-serif; /* Fonte personalizada */
+    color: white;
+}
+
+
+/* Estilo do footer */
+footer {
+    background: linear-gradient(to bottom, #ff000069, #00000000); /* Gradiente do vermelho para o preto */
+    position: relative;
+}
+footer .michy{
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
